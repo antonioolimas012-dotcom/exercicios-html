@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #c70000, #00127b, #ffffff);
+    min-height: 100vh;
+    padding: 30px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    color: yellow;
+    text-shadow: 3px 3px 5px black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trofeu {
+    font-size: 90px;
+}
+
+.bandeira {
+    width: 260px;
+    height: 140px;
+    background: white;
+    border: 5px solid yellow;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #001a33;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.figurinha {
+    background: white;
+    border: 5px solid yellow;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.figurinha:hover {
+    transform: scale(1.03);
+}
+
+.numero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    color: white;
+    padding: 8px 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.foto {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #001a33;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    border-bottom: 3px solid #ddd;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nome {
+    background: #001a33;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.posicao {
+    background: yellow;
+    color: #001a33;
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.bola {
+    background: #0b3d0b;
+}
+
+/* FIGURINHA CRAQUE */
+.craque {
+    animation: brilho 2s infinite alternate;
+    position: relative;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.craque:hover {
+    animation: pulo 0.6s ease;
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 25px gold;
+}
+
+/* PULO */
+@keyframes pulo {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* BRILHO */
+@keyframes brilho {
+
+    from {
+        box-shadow: 0 0 10px yellow;
+    }
+
+    to {
+        box-shadow: 0 0 30px gold;
+    }
+
+}
+
+
+@media(max-width:1200px) {
+    .album {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:800px) {
+    .album {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .topo {
+        justify-content: center;
+    }
+
+
+}
+
+.band{
+    width: 85%;
+
+}

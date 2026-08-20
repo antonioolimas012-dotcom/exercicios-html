@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação I</title>
+</head>
+
+<body>
+    <h1>Antonio Falquembak</h1>
+<!--Que falta faz aprender css-->
+    <h2> Registro acadêmico</h2>
+    <p>A todo momento aprendendo algo novo principalmente em C e HTML e as vezes aprecendo algo de CSS, o campus e muito
+        acolhedor os professores sempre a disposição com aulas bem didaticas, focando bastante na pratica e fazendo
+        exercicios a todo momento </p>
+    <p>Um desempenho satisfatório apresentando mais facilidade a HTML do que C e facil entendimento nos fundamentos de
+        sistema de informação</p>
+    <h2>Atividades do Dia</h2>
+    <ul>
+        <li>Curso de Front-end</li>
+        <li>Aulas de lógica de Programação</li>
+        <li>Aulas de Fundamentos matemáticos</li>
+        <li>Atividades de C</li>
+        <li>Questionários de Fundamentos de Sistemas de Informação</li>
+    </ul>
+
+    <h2>Metas acadêmicas</h2>
+    <ol>
+        <li>Concluir o curso de Front-end</li>
+        <li>Desenvolver um projeto pessoal em HTML e CSS</li>
+        <li>Postar projetos no GitHub</li>
+        <li>Conseguir um emprego na área de desenvolvimento web</li>
+        <li>Concluir as Horas de atividades extras o mais rapido possivel</li>
+    </ol>
+    <h2>Horário de Aulas</h2>
+    <!-- oque deu trabalho essa tabela para ajeitar foi o que mais demorou para fazer...-->
+    <table border="1">
+        <tr>
+            <th>Horário</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+        </tr>
+        <tr>
+            <td>19:30-21:10</td>
+            <td>Algoritmo e lógica de Programação</td>
+            <td>Fundamentos Matemáticos</td>
+            <td>Algoritmo e lógica de Programação</td>
+            <td>Introdução à Tecnologia da Informação</td>
+            <td>Lingua Portuguesa</td>
+        </tr>
+        <tr>
+            <td>21:25-22:50</td>
+            <td>Fundamentos de Sistemas de Informação</td>
+            <td>Fundamentos Matemáticos</td>
+            <td>Algoritmo e lógica de Programação</td>
+            <td>Introdução ao Desenvolvimento Web</td>
+            <td>Lingua Portuguesa</td>
+        </tr>
+    </table>
+<!--chega a cansar escrever tanto label, input etc-->
+    <h2>Cadastro de Trabalhos</h2>
+    <label for="nome">Nome do Trabalho:</label>
+    <br>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <br>
+    <label for="data">Data de Entrega:</label>
+    <br>    
+    <input type="date" id="data" name="data">
+    <br>
+    <br>
+    <label for="tipo">Tipo de Entrega:</label>
+    <br>
+    <input type="radio" id="digital" name="tipo" value="digital">
+    <label for="digital">Digital</label>
+    <input type="radio" id="fisico" name="tipo" value="fisico">
+    <label for="fisico">Fisico</label>
+    <br>
+    <br>
+    <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Descrição do trabalho..."></textarea>
+    <br>
+    <br>
+    <label for="color">Nivel de Urgencia</label>
+    <input type="color" id="color" name="color">
+    <br>
+    <br>
+    <input type="checkbox" value="Entregue" id="entregue" name="entregue    ">
+    <label for="entregue">Entregue</label>
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+
+</body>
+
+
+</html>
